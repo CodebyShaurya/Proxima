@@ -106,16 +106,16 @@ export default function HomePage() {
               </div>
             </div>
             <div>
-              <a className="bg-blue-600 text-white rounded-xl  py-4 px-4 mr-2 wow  animate__animated animate__fadeIn hover-up-2" href="#key-features">
+              <a className="bg-blue-600 text-white rounded-xl  py-4 px-8 mr-2 wow  animate__animated animate__fadeIn hover-up-2" href="/signup">
                 Get Started
               </a>
-              <a
+              {/* <a
                 className="text-blue-600 bg-gray-400 rounded-xl  py-4 px-4 wow animate__animated animate__fadeIn hover-up-2"
                 data-wow-delay=".3s"
                 href="#how-we-work"
               >
                 How We Work?
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
