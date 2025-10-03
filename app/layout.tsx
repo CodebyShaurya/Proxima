@@ -7,7 +7,8 @@ import { AuthProvider } from '@/hooks/useAuth';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'JobMatch AI - Find Your Perfect Job',
+  icons: 'https://img.icons8.com/sf-regular/512/228BE6/briefcase.png',
+  title: 'Proxima - Find Your Perfect Job',
   description: 'AI-powered job matching platform that connects you with your ideal career opportunities',
 };
 

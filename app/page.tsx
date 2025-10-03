@@ -98,21 +98,19 @@ export default function HomePage() {
           <div className="pt-12 text-center">
             <div className="max-w-2xl mx-auto mb-8">
               <h2 className="text-3xl lg:text-5xl lg:leading-normal mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
-                Committed to People <br />Committed <span className="text-blue-500">to the Future</span>
+                Find Your Dream Job <br />Powered by <span className="text-blue-500">AI Intelligence</span>
               </h2>
               <div className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn d-inline">
-                We are <strong className="text-blue-500">Monst</strong>, a Creative Design
-                <div className="typewrite d-inline text-brand">
-                  <span style={{ display: "inline-block" }} className="index-module_type__E-SaG"></span>
-                </div>
+                We are <strong className="text-blue-500">Proxima</strong>, an AI-Powered Job Matching Platform
+                
               </div>
             </div>
             <div>
-              <a className="btn-primary py-4 px-8 mr-2 wow animate__animated animate__fadeIn hover-up-2" href="#key-features">
-                Key Features
+              <a className="bg-blue-600 text-white rounded-xl  py-4 px-4 mr-2 wow  animate__animated animate__fadeIn hover-up-2" href="#key-features">
+                Get Started
               </a>
               <a
-                className="btn-white wow animate__animated animate__fadeIn hover-up-2"
+                className="text-blue-600 bg-gray-400 rounded-xl  py-4 px-4 wow animate__animated animate__fadeIn hover-up-2"
                 data-wow-delay=".3s"
                 href="#how-we-work"
               >
@@ -149,7 +147,7 @@ export default function HomePage() {
               style={{ color: "transparent", width: "auto", height: "auto", animation: "jump 2s infinite" }}
               sizes="100vw"
               // srcSet="/_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&amp;w=3840&amp;q=75 3840w"
-              src="https://monst-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimgs%2Fplaceholders%2Fdashboard.png&w=3840&q=75"
+              src="/assets/home.png"
             />
           </div>
         </div>
@@ -182,7 +180,7 @@ export default function HomePage() {
                     <span>950</span>
                   </span>
                 </span>
-                <p className="text-xs sm:text-base text-blueGray-400">Annual Partner</p>
+                <p className="text-xs sm:text-base text-blueGray-400">Active Job Seekers</p>
               </div>
             </div>
             <div
@@ -213,7 +211,7 @@ export default function HomePage() {
                   </span>
                 </span>
                 <span className="sm:text-2xl font-bold font-heading"> k </span>
-                <p className="text-xs sm:text-base text-blueGray-400">Completed Projects</p>
+                <p className="text-xs sm:text-base text-blueGray-400">Job Listings</p>
               </div>
             </div>
             <div
@@ -243,7 +241,7 @@ export default function HomePage() {
                     <span>500</span>
                   </span>
                 </span>
-                <p className="text-xs sm:text-base text-blueGray-400">Happy Customers</p>
+                <p className="text-xs sm:text-base text-blueGray-400">Successful Placements</p>
               </div>
             </div>
             <div
@@ -273,7 +271,7 @@ export default function HomePage() {
                     <span>300</span>
                   </span>
                 </span>
-                <p className="text-xs sm:text-base text-blueGray-400">Research Work</p>
+                <p className="text-xs sm:text-base text-blueGray-400">Partner Companies</p>
               </div>
             </div>
           </div>
@@ -297,8 +295,8 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="mb-2 text-xl font-semibold font-heading">Expand Your Reach</h3>
-                    <p className="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                    <h3 className="mb-2 text-xl font-semibold font-heading">AI-Powered Matching</h3>
+                    <p className="text-blueGray-400 leading-loose">Our advanced AI algorithms analyze your skills and preferences to match you with the perfect job opportunities.</p>
                   </div>
                 </div>
                 <div className="flex items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".7s">
@@ -309,8 +307,8 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="mb-2 text-xl font-semibold font-heading">Annualized Growth</h3>
-                    <p className="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                    <h3 className="mb-2 text-xl font-semibold font-heading">Instant Email Alerts</h3>
+                    <p className="text-blueGray-400 leading-loose">Get notified immediately when new jobs matching your profile are posted. Never miss an opportunity again.</p>
                   </div>
                 </div>
                 <div className="flex items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".9s">
@@ -320,17 +318,17 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="mb-2 text-xl font-semibold font-heading">Book Your Providers</h3>
-                    <p className="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                    <h3 className="mb-2 text-xl font-semibold font-heading">Personalized Dashboard</h3>
+                    <p className="text-blueGray-400 leading-loose">Track your applications, save favorite jobs, and manage your job search all in one convenient place.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="relative w-full lg:w-1/2 my-12 lg:my-0">
               <div className="wow animate__animated animate__fadeIn" data-wow-delay=".5s">
-                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="jump relative mx-auto rounded-xl w-full z-10" style={{ color: "transparent", width: "auto", height: "auto" }} sizes="100vw" src="https://monst-nextjs.vercel.app/assets/imgs/placeholders/img-1.png" />
-                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="absolute top-0 left-0 w-40 -ml-12 -mt-12" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/elements/blob-tear.svg" />
-                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/elements/blob-tear.svg" />
+                <img alt="Monst" loading="lazy"  decoding="async" data-nimg="1" className="jump relative mx-auto rounded-xl w-full z-10 w-[500px]" style={{ color: "transparent"}} sizes="100vw" src="https://monst-nextjs.vercel.app/assets/imgs/placeholders/img-1.png" />
+                <img alt="Monst" loading="lazy"  decoding="async" data-nimg="1" className="absolute top-0 left-0 -ml-12 -mt-12 w-56 h-56" style={{ color: "transparent" }} src="https://monst-nextjs.vercel.app/assets/imgs/elements/blob-tear.svg" />
+                <img alt="Monst" loading="lazy"  decoding="async" data-nimg="1" className="absolute bottom-0 right-0  -mr-12 -mb-12 w-56 h-56" style={{ color: "transparent" }} src="https://monst-nextjs.vercel.app/assets/imgs/elements/blob-tear.svg" />
               </div>
             </div>
           </div>
@@ -343,15 +341,15 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
             <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
               <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInDown">
-                <span>We are</span>
-                <span className="text-blue-500"> awesome team</span>
+                <span>How Our</span>
+                <span className="text-blue-500"> AI Job Finder</span>
                 <br />
-                <span>for your business dream</span>
+                <span>Works for You</span>
               </h2>
             </div>
             <div className="w-full lg:w-1/2">
               <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.
+                Our intelligent platform streamlines your job search by matching your unique skills and preferences with the best opportunities. Get started in three simple steps and let AI do the heavy lifting.
               </p>
             </div>
           </div>
@@ -359,25 +357,25 @@ export default function HomePage() {
             <div className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
               <div className="p-12 bg-white shadow rounded">
                 <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">1</div>
-                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 mx-auto my-4" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/eating.svg" />
-                <h3 className="mb-2 font-bold font-heading text-xl">Project Initialization</h3>
-                <p className="text-sm text-blueGray-400 leading-relaxed">Project initiation ensures that you lay a strong foundation for a new project in your company our team.</p>
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 w-56 mx-auto my-4" style={{ color: "transparent" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/eating.svg" />
+                <h3 className="mb-2 font-bold font-heading text-xl">Create Your Profile</h3>
+                <p className="text-sm text-blueGray-400 leading-relaxed">Sign up and build your profile with your skills, experience, and job preferences. Our AI will use this to find your perfect match.</p>
               </div>
             </div>
             <div className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
               <div className="p-12 bg-white shadow rounded">
                 <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">2</div>
-                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 mx-auto my-4" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/space.svg" />
-                <h3 className="mb-2 font-bold font-heading text-xl">Project planning</h3>
-                <p className="text-sm text-blueGray-400 leading-relaxed">A project plan is essential to keep everything related to the project organized, methodical, and on track.</p>
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 w-56 mx-auto my-4" style={{ color: "transparent" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/space.svg" />
+                <h3 className="mb-2 font-bold font-heading text-xl">AI Matches Jobs</h3>
+                <p className="text-sm text-blueGray-400 leading-relaxed">Our intelligent algorithm analyzes thousands of job listings and matches you with opportunities that align with your profile.</p>
               </div>
             </div>
             <div className="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
               <div className="p-12 bg-white shadow rounded wow animate__animated animate__fadeIn" data-wow-delay=".7s">
                 <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">3</div>
-                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 mx-auto my-4" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/tasks.svg" />
-                <h3 className="mb-2 font-bold font-heading text-xl">Project organization</h3>
-                <p className="text-sm text-blueGray-400 leading-relaxed">Moving forward you will be able to keep yourself and your team on track, and address challenges early.</p>
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 w-56 mx-auto my-4" style={{ color: "transparent" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/tasks.svg" />
+                <h3 className="mb-2 font-bold font-heading text-xl">Get Email Alerts</h3>
+                <p className="text-sm text-blueGray-400 leading-relaxed">Receive instant email notifications when new jobs matching your criteria are posted. Stay ahead of the competition.</p>
               </div>
             </div>
           </div>
@@ -406,7 +404,7 @@ export default function HomePage() {
                 <p className="text-blue-200 text-lg mb-4">AI Engineer & Full-Stack Developer</p>
                 <p className="text-gray-300 mb-6">
                   Passionate about building intelligent systems that solve real-world problems. 
-                  Proxima leverages cutting-edge machine learning algorithms to match candidates with their ideal jobs.
+                  Proxima uses advanced AI to connect job seekers with their dream careers through smart matching and instant email alerts.
                 </p>
 
                 <div className="flex items-center justify-center md:justify-start gap-4">
