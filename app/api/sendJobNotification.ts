@@ -50,7 +50,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         from: process.env.EMAIL_USER,
         to: user.email,
         subject: `New Job Opportunity: ${job.title}`,
-        text: `Hi ${user.firstName},\n\nWe found a new job that matches your skills:\n\nTitle: ${job.title}\nCompany: ${job.company}\nLocation: ${job.location}\nDescription: ${job.description}\n\nApply here: ${job.applyLink}\n\nBest regards,\nJobAI Team`,
+        text: `Hi ${user.firstName},\n\nWe found a new job that matches your skills:\n\nTitle: ${job.title}\nCompany: ${job.company}\nLocation: ${job.location}\nDescription: ${job.description}\n\nApply here: ${job.applyLink}\n\nBest regards,\nProxima Team`,
       };
 
       await transporter.sendMail(mailOptions);

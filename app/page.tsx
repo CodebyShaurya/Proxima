@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Briefcase, Sparkles, Mail, Target, TrendingUp, Shield, Github, Linkedin, Twitter } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button } from 'react-day-picker';
 
 export default function HomePage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -32,7 +31,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Briefcase className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold text-gray-900">JobAI</span>
+              <span className="text-2xl font-bold text-gray-900">Proxima</span>
             </div>
             <div className="flex items-center gap-4">
               <Link href="/login" className="text-gray-700 hover:text-blue-600 font-medium">
@@ -281,143 +280,135 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose JobAI?</h2>
-            <p className="text-xl text-gray-600">Intelligent features designed to accelerate your job search</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-sm hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <Sparkles className="h-6 w-6 text-white" />
+      {/* Key Features Section */}
+      <section className="pt-8 pb-12 md:py-16 lg:py-16 overflow-x-hidden" id="key-features">
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-wrap lg:flex-nowrap">
+            <div className="w-full lg:w-1/2">
+              <div className="lg:py-6 lg:pr-77 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                <div className="mb-4">
+                  <span className="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown" data-wow-delay=".9s">Why choose us</span>
+                  <h2 className="text-4xl mt-5 font-bold font-heading wow animate__animated animate__fadeIn" data-wow-delay=".3s">Key Features</h2>
+                </div>
+                <div className="flex items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                  <div className="w-8 mr-5 text-blue-500">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-xl font-semibold font-heading">Expand Your Reach</h3>
+                    <p className="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                  </div>
+                </div>
+                <div className="flex items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".7s">
+                  <div className="w-8 mr-5 text-blue-500">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-xl font-semibold font-heading">Annualized Growth</h3>
+                    <p className="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                  </div>
+                </div>
+                <div className="flex items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".9s">
+                  <div className="w-8 mr-5 text-blue-500">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-xl font-semibold font-heading">Book Your Providers</h3>
+                    <p className="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">AI-Powered Matching</h3>
-              <p className="text-gray-700">
-                Our advanced AI analyzes your skills, experience, and preferences to recommend jobs that perfectly match your profile.
-              </p>
             </div>
-
-            <div className="p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-sm hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
-                <Mail className="h-6 w-6 text-white" />
+            <div className="relative w-full lg:w-1/2 my-12 lg:my-0">
+              <div className="wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="jump relative mx-auto rounded-xl w-full z-10" style={{ color: "transparent", width: "auto", height: "auto" }} sizes="100vw" src="https://monst-nextjs.vercel.app/assets/imgs/placeholders/img-1.png" />
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="absolute top-0 left-0 w-40 -ml-12 -mt-12" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/elements/blob-tear.svg" />
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/elements/blob-tear.svg" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Instant Email Alerts</h3>
-              <p className="text-gray-700">
-                Get notified immediately when new jobs matching your criteria are posted. Never miss an opportunity again.
-              </p>
-            </div>
-
-            <div className="p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-sm hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
-                <Target className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Skill-Based Filtering</h3>
-              <p className="text-gray-700">
-                Filter opportunities based on your unique skill set and career goals for highly relevant recommendations.
-              </p>
-            </div>
-
-            <div className="p-8 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl shadow-sm hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Career Insights</h3>
-              <p className="text-gray-700">
-                Access detailed analytics on application success rates, salary trends, and career progression insights.
-              </p>
-            </div>
-
-            <div className="p-8 bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl shadow-sm hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Verified Employers</h3>
-              <p className="text-gray-700">
-                All job postings are from verified companies, ensuring legitimate opportunities and secure applications.
-              </p>
-            </div>
-
-            <div className="p-8 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl shadow-sm hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
-                <Briefcase className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">One-Click Apply</h3>
-              <p className="text-gray-700">
-                Streamlined application process with saved profiles. Apply to multiple jobs in seconds with one click.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
-            <p className="text-xl text-gray-600">Get started in 3 simple steps</p>
+      {/* How We Work Section */}
+      <section className="py-20 bg-blueGray-50" id="how-we-work">
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
+            <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
+              <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInDown">
+                <span>We are</span>
+                <span className="text-blue-500"> awesome team</span>
+                <br />
+                <span>for your business dream</span>
+              </h2>
+            </div>
+            <div className="w-full lg:w-1/2">
+              <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.
+              </p>
+            </div>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                1
+          <div className="flex flex-wrap -mx-3 -mb-6 text-center">
+            <div className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+              <div className="p-12 bg-white shadow rounded">
+                <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">1</div>
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 mx-auto my-4" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/eating.svg" />
+                <h3 className="mb-2 font-bold font-heading text-xl">Project Initialization</h3>
+                <p className="text-sm text-blueGray-400 leading-relaxed">Project initiation ensures that you lay a strong foundation for a new project in your company our team.</p>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Create Your Profile</h3>
-              <p className="text-gray-600">
-                Sign up and add your skills, experience, preferences, and career goals. The more details, the better the matches.
-              </p>
             </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                2
+            <div className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+              <div className="p-12 bg-white shadow rounded">
+                <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">2</div>
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 mx-auto my-4" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/space.svg" />
+                <h3 className="mb-2 font-bold font-heading text-xl">Project planning</h3>
+                <p className="text-sm text-blueGray-400 leading-relaxed">A project plan is essential to keep everything related to the project organized, methodical, and on track.</p>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Get AI Recommendations</h3>
-              <p className="text-gray-600">
-                Our AI analyzes thousands of jobs and matches you with opportunities that fit your profile perfectly.
-              </p>
             </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                3
+            <div className="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
+              <div className="p-12 bg-white shadow rounded wow animate__animated animate__fadeIn" data-wow-delay=".7s">
+                <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">3</div>
+                <img alt="Monst" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" className="h-36 mx-auto my-4" style={{ color: "transparent", width: "auto", height: "auto" }} src="https://monst-nextjs.vercel.app/assets/imgs/illustrations/tasks.svg" />
+                <h3 className="mb-2 font-bold font-heading text-xl">Project organization</h3>
+                <p className="text-sm text-blueGray-400 leading-relaxed">Moving forward you will be able to keep yourself and your team on track, and address challenges early.</p>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Apply & Get Hired</h3>
-              <p className="text-gray-600">
-                Apply with one click and track your applications. Receive email alerts when new matching jobs are posted.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Developer Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-gray-900 to-blue-600 text-white ">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Developed with ❤️ by</h2>
+            <h2 className="text-4xl font-bold mb-4">Developed by</h2>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12">
+          <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12 ">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-shrink-0">
-                <div className="w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-4xl font-bold shadow-2xl">
-                  SG
-                </div>
-              </div>
-              
+               
+                   <img
+                  alt="Developer Avatar"
+                  src="https://avatars.githubusercontent.com/u/123228383?v=4"
+                  className="  w-56 h-56 rounded-full "
+                  // style={{ animation: "jump 2s infinite" }}
+                />
+
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-3xl font-bold mb-2">Shaurya Gupta</h3>
                 <p className="text-blue-200 text-lg mb-4">AI Engineer & Full-Stack Developer</p>
                 <p className="text-gray-300 mb-6">
                   Passionate about building intelligent systems that solve real-world problems. 
-                  JobAI leverages cutting-edge machine learning algorithms to match candidates with their ideal jobs.
+                  Proxima leverages cutting-edge machine learning algorithms to match candidates with their ideal jobs.
                 </p>
-                
+
                 <div className="flex items-center justify-center md:justify-start gap-4">
                   <a 
                     href="https://github.com/CodeByShaurya" 
@@ -453,33 +444,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-blue-600">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Ready to Find Your Dream Job?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Join thousands of professionals who found their perfect match with JobAI
-          </p>
-          <Link 
-            href="/signup" 
-            className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg shadow-lg hover:bg-gray-100 transition text-lg font-semibold"
-          >
-            Get Started for Free
-          </Link>
-        </div>
-      </section>
+      {/* Update Website Name and Top Sections */}
+      {/* Hero Section */}
+     
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-gray-900 text-gray-400">
+      <footer className="py-12 px-4 bg- text-gray-400">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Briefcase className="h-6 w-6 text-blue-400" />
-            <span className="text-xl font-bold text-white">JobAI</span>
+            <span className="text-xl font-bold text-black">Proxima</span>
           </div>
           <p className="mb-4">AI-Powered Job Matching Platform</p>
-          <p className="text-sm">© 2025 JobAI. Developed by Shaurya Gupta. All rights reserved.</p>
+          <p className="text-sm">© 2025 Proxima. Developed by Shaurya Gupta. All rights reserved.</p>
         </div>
       </footer>
     </div>
